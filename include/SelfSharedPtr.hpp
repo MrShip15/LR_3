@@ -1,4 +1,4 @@
-// Copyright 2020 Dolbnin Mikhail dolbnin@protonmail.com
+// Copyright 2020 MrShip15 mr.shi15@gmail.ru
 
 #ifndef  INCLUDE_SELFSHAREDPTR_HPP_
 #define  INCLUDE_SELFSHAREDPTR_HPP_

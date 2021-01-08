@@ -1,4 +1,4 @@
-// Copyright 2018 Your Name <your_email>
+// Copyright 2020 MrShip15 mr.shi15@gmail.ru
 
 #include <gtest/gtest.h>
 #include "SelfSharedPtr.hpp"
