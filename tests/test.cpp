@@ -53,14 +53,3 @@ TEST(SelfSharedPtr, funcThrow){
   SelfSharedPtr<int> A;
   ASSERT_THROW(*A, std::out_of_range);
 }
-
-TEST(Shared_Ptr, IsMoveConstructable){
-  EXPECT_TRUE(std::is_move_constructible<SharedPtr<int>>());
-  EXPECT_TRUE(std::is_move_constructible<SharedPtr<std::string>>());
-  EXPECT_TRUE(std::is_move_constructible<SharedPtr<double>>());
-}
-
-TEST(Shared_Ptr, IsMoveAssygnable){
-  EXPECT_TRUE(std::is_move_assignable<SharedPtr<int>>());
-  EXPECT_TRUE(std::is_move_assignable<SharedPtr<std::string>>());
-  EXPECT_TRUE(std::is_move_assignable<SharedPtr<double>>());
