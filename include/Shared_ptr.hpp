@@ -53,10 +53,9 @@ SharedPtr<T>::SharedPtr(const SharedPtr& r) {
 }
 template <typename T>
 SharedPtr<T>::SharedPtr(SharedPtr&& r) noexcept{
-  pointer = r.pointer;
-  counter = r.counter;
-  r.pointer = nullptr;
-  r.counter = nullptr;
+  pointer = nullptr;
+  counter = nullptr;
+  swap(r);
 }
 template <typename T>
 SharedPtr<T>::~SharedPtr() {
