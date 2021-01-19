@@ -1,3 +1,4 @@
+
 # Лабораторная работа №3
 
 ### Задание
@@ -16,8 +17,8 @@ public:
     SharedPtr(const SharedPtr& r);
     SharedPtr(SharedPtr&& r);
     ~SharedPtr();
-    auto opeartor=(const SharedPtr& r) -> SharedPtr&;
-    auto opeartor=(SharedPtr&& r) -> SharedPtr&;
+    auto operator=(const SharedPtr& r) -> SharedPtr&;
+    auto operator=(SharedPtr&& r) -> SharedPtr&;
 
     // проверяет, указывает ли указатель на объект
     operator bool() const;
